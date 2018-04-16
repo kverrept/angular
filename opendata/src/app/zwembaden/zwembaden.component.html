@@ -1,3 +1,16 @@
-<p>
-  zwembaden works!
-</p>
+<h1>Zwembaden</h1>
+
+{{ zwembaden | json }}
+
+<select>
+  <option *ngFor="let item of openingstijden">{{item.locatie}}</option>
+</select>
+<select>
+  <option *ngFor="let item of openingstijden">{{item.doelgroep}}</option>
+</select>
+<select>
+  <option *ngFor="let item of openingstijden">{{item.uur}}</option>
+</select>
+<select>
+  <option *ngFor="let item of openingstijden">{{item.bad}}</option>
+</select>
